@@ -22,7 +22,7 @@ import kotlinx.coroutines.launch
 fun Drawer(scope: CoroutineScope, scaffoldState: ScaffoldState, navController: NavController) {
     val items = listOf(
         NavigationItem.DrawShapes,
-        NavigationItem.Another
+        NavigationItem.CircleGame
     )
 
     Column {
