@@ -17,6 +17,8 @@ class MainActivity : ComponentActivity() {
             JetpackComposeCanvasExamplesTheme {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
                     ContentScreen()
+
+
                 }
             }
         }

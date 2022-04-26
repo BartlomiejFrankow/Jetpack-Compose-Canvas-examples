@@ -1,4 +1,4 @@
-package com.example.jetpackcomposecanvasexamples.presentation
+package com.example.jetpackcomposecanvasexamples.presentation.main.drawerMenu.circleClickGame
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable

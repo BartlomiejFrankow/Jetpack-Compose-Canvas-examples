@@ -4,8 +4,8 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.jetpackcomposecanvasexamples.presentation.AnotherScreen
-import com.example.jetpackcomposecanvasexamples.presentation.DrawShapesScreen
+import com.example.jetpackcomposecanvasexamples.presentation.main.drawerMenu.circleClickGame.AnotherScreen
+import com.example.jetpackcomposecanvasexamples.presentation.main.drawerMenu.shapes.DrawShapesScreen
 import com.example.jetpackcomposecanvasexamples.utils.NavigationItem
 
 @Composable
