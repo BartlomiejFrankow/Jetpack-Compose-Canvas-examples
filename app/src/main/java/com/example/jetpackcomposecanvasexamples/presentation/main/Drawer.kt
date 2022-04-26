@@ -20,9 +20,11 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun Drawer(scope: CoroutineScope, scaffoldState: ScaffoldState, navController: NavController) {
-    val items = listOf(
+
+    val menuItems = listOf(
         NavigationItem.DrawShapes,
-        NavigationItem.CircleGame
+        NavigationItem.CircleGame,
+        NavigationItem.TextTransform
     )
 
     Column {
@@ -39,7 +41,7 @@ fun Drawer(scope: CoroutineScope, scaffoldState: ScaffoldState, navController: N
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
 
-    items.forEach { item ->
+    menuItems.forEach { item ->
         DrawerItem(item = item, selected = currentRoute == item.route, onItemClick = {
             navController.navigate(item.route) {
                 navController.graph.startDestinationRoute?.let { route ->
