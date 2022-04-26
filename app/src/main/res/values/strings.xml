@@ -2,5 +2,8 @@
     <string name="app_name">Jetpack Compose Canvas examples</string>
     <string name="toolbar_name">Jetpack Compose Canvas</string>
     <string name="draw_shapes">Draw shapes</string>
-    <string name="another">Another</string>
+    <string name="circle_game">Circle game</string>
+    <string name="points">Points: %1$d</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
 </resources>
