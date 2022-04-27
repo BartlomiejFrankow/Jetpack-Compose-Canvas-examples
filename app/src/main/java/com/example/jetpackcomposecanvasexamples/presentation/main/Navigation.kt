@@ -7,6 +7,7 @@ import androidx.navigation.compose.composable
 import com.example.jetpackcomposecanvasexamples.presentation.main.drawerMenu.circleClickGame.CircleGameScreen
 import com.example.jetpackcomposecanvasexamples.presentation.main.drawerMenu.shapes.DrawShapesScreen
 import com.example.jetpackcomposecanvasexamples.presentation.main.drawerMenu.textTransform.TextTransformScreen
+import com.example.jetpackcomposecanvasexamples.presentation.main.drawerMenu.weightMeasurement.WeightMeasurementScreen
 import com.example.jetpackcomposecanvasexamples.utils.NavigationItem
 
 @Composable
@@ -15,5 +16,6 @@ fun Navigation(navController: NavHostController) {
         composable(NavigationItem.DrawShapes.route) { DrawShapesScreen() }
         composable(NavigationItem.CircleGame.route) { CircleGameScreen() }
         composable(NavigationItem.TextTransform.route) { TextTransformScreen() }
+        composable(NavigationItem.WeightMeasurement.route) { WeightMeasurementScreen() }
     }
 }

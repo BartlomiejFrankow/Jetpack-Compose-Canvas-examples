@@ -18,6 +18,7 @@ fun TopBar(scope: CoroutineScope, scaffoldState: ScaffoldState) {
             IconButton(
                 onClick = {
                     scope.launch {
+                        scaffoldState.drawerState.currentValue
                         scaffoldState.drawerState.open()
                     }
                 }
