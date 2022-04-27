@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.example.jetpackcomposecanvasexamples.R
-import com.example.jetpackcomposecanvasexamples.utils.NavigationItem
+import com.example.jetpackcomposecanvasexamples.utils.NavigationItem.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -22,9 +22,10 @@ import kotlinx.coroutines.launch
 fun Drawer(scope: CoroutineScope, scaffoldState: ScaffoldState, navController: NavController) {
 
     val menuItems = listOf(
-        NavigationItem.DrawShapes,
-        NavigationItem.CircleGame,
-        NavigationItem.TextTransform
+        DrawShapes,
+        CircleGame,
+        TextTransform,
+        WeightMeasurement
     )
 
     Column {

@@ -9,4 +9,5 @@ sealed class NavigationItem(var route: String, var icon: ImageVector, var title:
     object DrawShapes : NavigationItem("draw_shapes", Icons.Default.Edit, R.string.draw_shapes)
     object CircleGame : NavigationItem("circle_game", Icons.Default.Edit, R.string.circle_game)
     object TextTransform : NavigationItem("text_transform", Icons.Default.Edit, R.string.text_transform)
+    object WeightMeasurement : NavigationItem("weight_measurement", Icons.Default.Edit, R.string.text_transform)
 }
