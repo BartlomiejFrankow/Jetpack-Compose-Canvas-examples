@@ -17,7 +17,8 @@ fun ContentScreen() {
     Scaffold(
         scaffoldState = scaffoldState,
         topBar = { TopBar(scope = scope, scaffoldState = scaffoldState) },
-        drawerContent = { Drawer(scope = scope, scaffoldState = scaffoldState, navController = navController) }
+        drawerContent = { Drawer(scope = scope, scaffoldState = scaffoldState, navController = navController) },
+        drawerGesturesEnabled = false
     ) {
         Navigation(navController = navController)
     }
