@@ -24,8 +24,8 @@ fun Drawer(scope: CoroutineScope, scaffoldState: ScaffoldState, navController: N
     val menuItems = listOf(
         DrawShapes,
         CircleGame,
-        TextTransform,
-        WeightMeasurement
+        WeightMeasurement,
+        Clock
     )
 
     Column {

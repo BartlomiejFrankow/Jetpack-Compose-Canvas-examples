@@ -26,10 +26,14 @@ import androidx.compose.ui.unit.sp
 import androidx.core.graphics.withRotation
 import com.example.jetpackcomposecanvasexamples.R
 import com.example.jetpackcomposecanvasexamples.presentation.main.drawerMenu.weightMeasurement.LineType.*
+import com.example.jetpackcomposecanvasexamples.utils.isFifthStep
+import com.example.jetpackcomposecanvasexamples.utils.isTenStep
+import com.example.jetpackcomposecanvasexamples.utils.toDegrees
+import com.example.jetpackcomposecanvasexamples.utils.toRadians
 import kotlin.math.*
 
-private const val SHADOW_ALPHA = 50
-private const val SHADOW_RADIUS = 60f
+const val SHADOW_ALPHA = 50
+const val SHADOW_RADIUS = 60f
 private const val NUMBER_SPACE = 5
 private const val NINETY_DEGREES_FLIP = 90
 private const val INDICATOR_SIDE_WIDTH = 4f
@@ -262,8 +266,8 @@ private fun DrawScope.drawScale(circleCenter: Offset, style: ScaleStyle) {
 }
 
 private fun getLineType(currentWeight: Int) = when {
-    currentWeight % 10 == 0 -> TenStep
-    currentWeight % 5 == 0 -> FiveStep
+    currentWeight.isTenStep() -> TenStep
+    currentWeight.isFifthStep() -> FiveStep
     else -> NormalStep
 }
 
@@ -278,7 +282,3 @@ private fun getLineColor(lineType: LineType, style: ScaleStyle) = when (lineType
     NormalStep -> style.normalLineColor
     TenStep -> style.tenStepLineColor
 }
-
-private fun Float.toRadians() = this * (PI / 180f).toFloat()
-
-private fun Float.toDegrees() = this * (180f / PI.toFloat())
