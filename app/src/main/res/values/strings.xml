@@ -3,7 +3,7 @@
     <string name="toolbar_name">Jetpack Compose Canvas</string>
     <string name="draw_shapes">Draw shapes</string>
     <string name="circle_game">Circle game</string>
-    <string name="text_transform">Text transformation</string>
+    <string name="clock">Clock</string>
     <string name="weight_measurement">Weight measurement</string>
     <string name="points">Points: %1$d</string>
     <string name="start">Start</string>
